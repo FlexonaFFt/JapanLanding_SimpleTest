@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy Japan</title>
+    <!-- Подключение шрифтов -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');</style>
+    <!-- Подключение дополнительных файлов -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Styles/mainStyle.css">
+    <link rel="stylesheet" href="Styles/adaptiveStyles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Scripts/mainScript.js"></script>
+</head>
+<body>
+ 
+    <!-- Этот коммент оставлен в nvim -->
+    <!-- Прописываю header -->
+    <header>
+        <div class="hamburger_menu" id="nav_menu">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
+        <div class="ticket_btn" id="ticket-btn">
+            <i class='bx bxs-purchase-tag'></i>
+        </div>
+        <nav class="nav_bar" id="nav-menu">
+            <ul>
+                <li class="nav_item"><a href="#">Home</a></li>
+                <li class="nav_item"><a href="#">About Japan</a></li>
+                <li class="nav_item"><a href="#">City Tour</a></li>
+                <li class="nav_item"><a href="#">Excursions</a></li>
+                <li class="nav_item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Прописываю HelloPage -->
+    <div class="hello_page">
+        <div class="main_content_block">
+            <div class="main_text_block">
+                <div class="first_text_block">
+                    <h1>Enjoy Japan</h1>
+                    <div class="rectangle"></div>
+                    <p class="first_p">Lorem ipsum dolor sit amet</p>
+                    <p class="second_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+
+                <div class="second_text_block">
+                    <h1>2024</h1>
+                    <p class="mini_zagolovok">Lorem ispum dolor</p>
+                    <div class="rectangle"></div>
+                    <p class="left_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         set do eiusmod</p>
+                    <p class="right_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+
+                <div class="third_text_block">
+                    <h1>see more</h1>
+                    <div class="rectangle"></div>
+                </div>
+            </div>
+
+            <img src="Materials/street-city-with-signs-people.jpg" alt="JapanStreet"> 
+
+            <div class="design_layer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="118" height="118" viewBox="0 0 118 118" fill="none">
+                    <path d="M58.0697 1.35871C58.4027 0.514569 59.5973 0.51457 59.9303 1.35872L65.6131 15.7677C72.22 32.5196 85.4804 45.78 102.232 52.3869L116.641 58.0697C117.485 58.4027 117.485 59.5973 116.641 59.9303L102.232 65.6131C85.4804 72.22 72.22 85.4804 65.6131 102.232L59.9303 116.641C59.5973 117.485 58.4027 117.485 58.0697 116.641L52.3869 102.232C45.78 85.4804 32.5196 72.22 15.7677 65.6131L1.35871 59.9303C0.514569 59.5973 0.51457 58.4027 1.35872 58.0697L15.7677 52.3869C32.5196 45.78 45.78 32.5196 52.3869 15.7677L58.0697 1.35871Z" fill="#EBEBEB"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Прописываю скрипт для header -->
+    <script>
+        hamburger = document.querySelector(".hamburger_menu");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav_bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+
+    <!-- Прописываю Introduction блок -->
+    <div class="introduction_block">
+        <div class="intr_img_block">
+            <img src="Materials/gable-temple-sakura_1150-10889.jpg" alt="gable">
+        </div>
+        <div class="intr_text_block">
+            <div class="first_text_block">
+                <h1 class="zag">Enjoy Japan</h1>
+                <div class="rectangle"></div>
+                <p class="first_p">Lorem ipsum dolor sit amet</p>
+                <p class="sec_p">Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="second_text_block">
+                <h1 class="zag">see the sights</h1>
+                <div class="rectangle"></div>
+                <p class="left_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    set do eiusmod</p>
+                <p class="right_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="third_text_block">
+                <h1 class="zag">scroll down</h1>
+                <div class="rectangle"></div>
+            </div>
+        </div>
+        <div class="second_design_layer">
+            <h2>Japan</h2>
+            <h3>Tour</h3>
+            <div class="third_stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="200" viewBox="0 0 50 200" fill="none">
+                    <path d="M24.0697 2.35872C24.4027 1.51457 25.5973 1.51457 25.9303 2.35872L28.4061 8.63631C30.7439 14.5639 35.4361 19.2561 41.3637 21.5939L47.6413 24.0697C48.4854 24.4027 48.4854 25.5973 47.6413 25.9303L41.3637 28.4061C35.4361 30.7439 30.7439 35.4361 28.4061 41.3637L25.9303 47.6413C25.5973 48.4854 24.4027 48.4854 24.0697 47.6413L21.5939 41.3637C19.2561 35.4361 14.5639 30.7439 8.63631 28.4061L2.35872 25.9303C1.51457 25.5973 1.51457 24.4027 2.35872 24.0697L8.6363 21.5939C14.5639 19.2561 19.2561 14.5639 21.5939 8.6363L24.0697 2.35872Z" fill="black"/>
+                    <path d="M24.0697 77.3587C24.4027 76.5146 25.5973 76.5146 25.9303 77.3587L28.4061 83.6363C30.7439 89.5639 35.4361 94.2561 41.3637 96.5939L47.6413 99.0697C48.4854 99.4027 48.4854 100.597 47.6413 100.93L41.3637 103.406C35.4361 105.744 30.7439 110.436 28.4061 116.364L25.9303 122.641C25.5973 123.485 24.4027 123.485 24.0697 122.641L21.5939 116.364C19.2561 110.436 14.5639 105.744 8.63631 103.406L2.35872 100.93C1.51457 100.597 1.51457 99.4027 2.35872 99.0697L8.6363 96.5939C14.5639 94.2561 19.2561 89.5639 21.5939 83.6363L24.0697 77.3587Z" fill="black"/>
+                    <path d="M24.0697 152.359C24.4027 151.515 25.5973 151.515 25.9303 152.359L28.4061 158.636C30.7439 164.564 35.4361 169.256 41.3637 171.594L47.6413 174.07C48.4854 174.403 48.4854 175.597 47.6413 175.93L41.3637 178.406C35.4361 180.744 30.7439 185.436 28.4061 191.364L25.9303 197.641C25.5973 198.485 24.4027 198.485 24.0697 197.641L21.5939 191.364C19.2561 185.436 14.5639 180.744 8.63631 178.406L2.35872 175.93C1.51457 175.597 1.51457 174.403 2.35872 174.07L8.6363 171.594C14.5639 169.256 19.2561 164.564 21.5939 158.636L24.0697 152.359Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="one_star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path d="M23.0697 1.35872C23.4027 0.51457 24.5973 0.51457 24.9303 1.35872L27.4061 7.63631C29.7439 13.5639 34.4361 18.2561 40.3637 20.5939L46.6413 23.0697C47.4854 23.4027 47.4854 24.5973 46.6413 24.9303L40.3637 27.4061C34.4361 29.7439 29.7439 34.4361 27.4061 40.3637L24.9303 46.6413C24.5973 47.4854 23.4027 47.4854 23.0697 46.6413L20.5939 40.3637C18.2561 34.4361 13.5639 29.7439 7.63631 27.4061L1.35872 24.9303C0.51457 24.5973 0.51457 23.4027 1.35872 23.0697L7.6363 20.5939C13.5639 18.2561 18.2561 13.5639 20.5939 7.6363L23.0697 1.35872Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
